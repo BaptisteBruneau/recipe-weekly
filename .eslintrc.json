@@ -1,0 +1,29 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "airbnb-typescript",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "import"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+      "@typescript-eslint/indent": ["error", 2],
+      "import/extensions": "off",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+  
